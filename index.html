@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALIH - Travel Blogger Free Bootstrap5 HTML Website Template</title>
+
+    <!-- Vendor CSS ================================================== -->
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!--Bootstrap ================================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+    <!-- Style Sheet ================================================== -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Google Fonts ================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+            <title>Search</title>
+            <path fill="currentColor"
+                d="M19 3C13.488 3 9 7.488 9 13c0 2.395.84 4.59 2.25 6.313L3.281 27.28l1.439 1.44l7.968-7.969A9.922 9.922 0 0 0 19 23c5.512 0 10-4.488 10-10S24.512 3 19 3zm0 2c4.43 0 8 3.57 8 8s-3.57 8-8 8s-8-3.57-8-8s3.57-8 8-8z" />
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="play" viewBox="0 0 512 512">
+            <path fill="white"
+                d="M0 256a256 256 0 1 1 512 0a256 256 0 1 1-512 0m188.3-108.9c-7.6 4.2-12.3 12.3-12.3 20.9v176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z" />
+        </symbol>
+    </svg>
+
+    <div class="search-popup">
+        <div class="search-popup-container">
+
+            <form role="search" method="get" class="form-group" action="index.html">
+                <input type="search" id="search-form" class="form-control border-0 border-bottom"
+                    placeholder="Type and press enter" value="" name="s">
+                <button type="submit" class="search-submit border-0 position-absolute bg-white"
+                    style="top: 15px;right: 15px;"><svg class="search" width="24" height="24">
+                        <use xlink:href="#search"></use>
+                    </svg></button>
+            </form>
+
+            <h5 class="cat-list-title">Browse Categories</h5>
+
+            <ul class="cat-list">
+                <li class="cat-list-item">
+                    <a href="#" title="Travel">Travel</a>
+                </li>
+                <li class="cat-list-item">
+                    <a href="#" title="Relationships">Relationships</a>
+                </li>
+                <li class="cat-list-item">
+                    <a href="#" title="Skin Care">Skin Care</a>
+                </li>
+                <li class="cat-list-item">
+                    <a href="#" title="Health">Health</a>
+                </li>
+                <li class="cat-list-item">
+                    <a href="#" title="Spa">Spa</a>
+                </li>
+                <li class="cat-list-item">
+                    <a href="#" title="Meditation">Meditation</a>
+                </li>
+                <li class="cat-list-item">
+                    <a href="#" title="Healing">Healing</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <nav class="navbar fixed-top navbar-expand-lg container-fluid p-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><span class="logotipe">SALIH</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <iconify-icon icon="system-uicons:menu-hamburger" class="hamburger-menu"></iconify-icon>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <a class="Salih" href="">
+                        <img src="" alt="">
+                    </a>
+                    <ul
+                        class="navbar-nav align-items-center justify-content-end justify-content-xxl-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase active mx-2 px-3 mb-2 mb-lg-0" aria-current="page"
+                                href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-uppercase mx-2 px-3 mb-2 mb-lg-0 dropdown-toggle"
+                                data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" href="#">БЕТ</a>
+                            <ul class="dropdown-menu border-0">
+                                <li><a href="О НАС.html"
+                                        class="dropdown-item d-flex align-items-center text-uppercase ">О НАС<span
+                                            class="badge text-primary"></span></a></li>
+                                <li><a href="blog.html"
+                                        class="dropdown-item d-flex align-items-center text-uppercase ">БЛОГ<span
+                                            class="badge text-primary"></span></a></li>
+                                <li><a href="blog-single.html"
+                                        class="dropdown-item d-flex align-items-center text-uppercase ">БЛОГ<span
+                                            class="badge text-primary"></span></a></li>
+                                <li><a href="gallery.html"
+                                        class="dropdown-item d-flex align-items-center text-uppercase ">ГАЛЕРЕЯ<span
+                                            class="badge text-primary"></span></a></li>
+                                <li><a href="contact.html"
+                                        class="dropdown-item d-flex align-items-center text-uppercase ">КОНТАКТЫ<span
+                                            class="badge text-primary"></span></a></li>
+                                <li><a href="faq.html"
+                                        class="dropdown-item d-flex align-items-center text-uppercase ">ОТВЕТЫ НА ЧАСТО
+                                        ЗАДАВАЕМЫЕ ВОПРОСЫ<span class="badge text-primary"></span></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase  mx-2 px-3 mb-2 mb-lg-0" href="#price">ЗАБРОНИРОВАТЬ
+                                ЗАКАЗ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase  mx-2 px-3 mb-2 mb-lg-0" href="#">СЕРВИС</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase  mx-2 px-3 mb-2 mb-lg-0" href="#blog">БЛОГ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase  mx-2 px-3 mb-2 mb-lg-0" href="#project">ГАЛЕРЕЯ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase  mx-2 px-3 mb-2 mb-lg-0" href="#">КОНТАКТЫ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://templatesjungle.gumroad.com/l/SALIH-travel-blog-free-bootstrap-website-template"
+                                class="btn btn-outline-primary mx-2 px-3 py-2">СВЯЗАТЬСЯ С НАМИ<iconify-icon
+                                    icon="tabler:arrow-right" class="arrow-icon"></iconify-icon>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <div class="  d-flex mt-5 mt-lg-0 ps-lg-5 align-items-center justify-content-end ">
+                        <ul class="navbar-nav social-div justify-content-end align-items-center">
+                            <li class="nav-item search-item">
+                                <a href="#" class="search-button text-white">
+                                    <svg class="search">
+                                        <use xlink:href="#search"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="d-flex align-items-center"
+        style="background-image:url(images/banner1-img.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; height: 80vh;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <div class="text-center pt-5">
+                        <p class="header-top text-white mb-4">ПРОНИКНЕМ ВГЛУБЬ ИСТОРИИ УРОЧИЩА</p>
+                        <h1 class="display-1 text-white mb-5">ТАУ ОЗЁНДЕ КЁЛЬ</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="padding-medium"
+        style="background-image:url(images/about-bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;">
+        <div class="container">
+            <div class="about-content">
+                <div class="row py-3 align-items-center">
+                    <div class="col-md-6">
+                        <img src="images/about-img.jpg" class="about-img img-fluid" alt="about">
+                    </div>
+                    <div class="col-md-6">
+                        <p class="header-top-2">Кто я такой?</p>
+                        <h2 class="display-2 my-2">Я Боташев Салих  путешествую по всему миру.</h2>
+                        <p class="mt-3">С самого детства путешествуя  по разным странам мира,  посетив все достопримечательности мира ,но одно из них глубоко врезалось мне в душу своим неповторимым , сказочным пейзажем , и забыть его мне не удаеться уже много лет , о нем сегодня я и хочу поведать Вам в своем блоге.                            
+                              После всего увиденного ,я осознал что, "ТАУ ОЗЕНДЕ КЕЛЬ" это
+                            самое живописное место, из когда либо встречавшихихся мне природных чудес , подобных 7
+                            чудесам света. Здесь Вы найдете горные ручьи и реки  наполненные хрустально чистой водой, впадающие в горные озера и питающие их, содержащие множество подводных обитателей, горные вершины неземной красоты, а так же дольмы , древние артефакты  хранящие непознанную тайну их строительства представителями предыдущих цивилизаций , и прекрасные горнолыжные курорты ю Все это не оставит Вас равнодушным и впечатления полученные здесь навсегда остануться с Вами.
+                        </p>
+                        <a href="about.html" class="btn btn-primary mt-4">Открыть статью полностью.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="posts" class="padding-medium bg-secondary">
+        <div class="container">
+            <div class="popular-stories">
+                <h2 class="display-2 text-primary text-capitalize mb-4 text-center">Известные истории.</h2>
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <div class="card rounded-5 border-0">
+                            <a
+                                href="https://yandex.ru/video/preview/16537084534388664927?from=tabbar&parent-reqid=1745159022508929-8992781799541537009-balancer-l7leveler-kubr-yp-klg-276-BAL&text=дайвинг%2Bкрасивый%2Bв%2Bгорном%2Bозере%2Bчеткое%2Bвидео%2B">
+                                <img src="images/posts01.jpg" class="img-fluid card-img-top salih" alt="posts">
+                                <div class="card-body">
+                                    <a href="#" class="text-uppercase text-primary fw-light">Прогулки на яхте по горным
+                                        озерам и спуски на каяках с горных рек запруженных порогами .</a>
+                                    <h5 class="card-title mt-2"><a href="#">Ищите дополните-льный толчек чтобы выйти в
+                                            мир. Здесь Вы можете попро-бовать заняться подводной съемкой под
+                                            руководством опытных дайверов местного клуба "БАРАКУДА", пое-хать на на
+                                            прогулку на квадрацикле в горы, к вашим услу-гам конные прогул-ки, заняться
+                                            пара-сейлингом , или спуститься с гор на параплане.</a></h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card rounded-5 border-0">
+                        <a href="https://ok.ru/video/2067123406281">
+                            <img src="https://avatars.mds.yandex.net/i?id=c4009f82a6947371ed94bf5233aa5d22b7006bb6-5231332-images-thumbs&n=13"
+                                class="img-fluid card-img-top salih" alt="posts">
+                            <div class="card-body">
+                                <a href="#" class="text-uppercase text-primary fw-light">Кулинарное разнообразие и
+                                    трдиции застолья. </a>
+                                <h5 class="card-title mt-2"><a href="#">Попробуйте оце-нить колорит мест-ной еды,
+                                        отличаю-щуюся высоким со-держанием бел-ка,острых блюд , пряностей, приправ, 
+                                        кисломолочных продуктов и овощей.</a></h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card rounded-5 border-0">
+                    <a href="https://rutube.ru/video/c1cc6baf6b31e553f16fd35464e233d4/?r=plwd">
+                        <img src="https://avatars.mds.yandex.net/i?id=7b74e8f012a8470235a7a0851fb867b2ce626b23-5280621-images-thumbs&n=13"
+                            class="img-fluid card-img-top salih" alt="posts">
+                        <div class="card-body">
+                            <a href="#" class="text-uppercase text-primary fw-light">АКТИВНОСТЬ(чем заняться)</a>
+                            <h5 class="card-title mt-2"><a href="#">Насладитесь видом сказочного высоко-горного озера (с
+                                    ко-торым связанно множество местных романтичных пре-даний повествую-щих о борьбе
+                                    добра и зла ,ненависти и силе любви и спра-ведливости дающей силы преодолеть все
+                                    невзгоды) спрятаного среди заснеженных горных вершин, покрытых густыми хвойными
+                                    лесами.</a></h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card rounded-5 border-0">
+                <a href="https://dzen.ru/video/watch/670b7982d526d47b71c7d5ad">
+                    <img src="https://avatars.mds.yandex.net/i?id=fd80a288d077cd5a76e047942ef2ccc51cfd622e-4777142-images-thumbs&n=13"
+                        class="img-fluid card-img-top salih" alt="posts">
+                    <div class="card-body">
+                        <a href="#" class="text-uppercase text-primary fw-light">МЕСТА СИЛЫ И ДОСТОПРИМЕЧАТЕЛЬНОСТИ.</a>
+                        <h5 class="card-title mt-2"><a href="#">В урочище Пхия на кислых источниках сосредоточенно до 42
+                                источников ле-чебной минераль-ной воды, которая востанавливает нарушенное с воз-растом
+                                здоровье приводя организм в первозданное состояние присущее человеку в момент его
+                                сотворения БОГОМ.</a></h5>
+                </a>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="latest-posts mt-5">
+            <h2 class="display-2 text-primary text-capitalize mb-4 text-center">Последние сообщения</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card rounded-5 border-0">
+                        <img src="images/posts06.jpg" class="img-fluid card-img-top" alt="posts">
+                        <div class="card-body">
+                            <a href="#" class="text-uppercase text-primary fw-light">Активный отдых</a>
+                            <h5 class="card-title mt-2"><a href="#">Займитесь здесь изучением неопис-уемого местного
+                                    присущего только данному уголку ми-ра ,благодаря благо-получному стече-нию многих
+                                    факторов подвод-ного ланшафта , под руководством опыт-ных инструкторов по дайвингу,
+                                    которых Вы найдете в широко известном среди професионалов , местном клубе
+                                    "Баракуда".</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card rounded-5 border-0">
+                        <a href="https://vkvideo.ru/video-222577942_456239047?ref_domain=yastatic.net"><img
+                                src="https://kpfu.ru/portal/docs/F_878805462/BTA_1.jpg" class="img-fluid card-img-top"
+                                alt="posts"></a>
+                        <div class="card-body">
+                            <a href="#" class="text-uppercase text-primary fw-light">Travel guide</a>
+                            <h5 class="card-title mt-2"><a href="#">Здесь расположен-на одна из крупней-ших абсерваторий
+                                    мира, так как здесь присутствует нео-бычайно чистый, прозрачный воздух и высоко в
+                                    горах где она расположена отсутствуют тепло-вые потоки вызы-вающие искажение
+                                    изображения звезд, а так-же около 300 ясных дней в году. </a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card rounded-5 border-0">
+                        <a href="https://vkvideo.ru/video-157295043_456239225?ref_domain=yastatic.net"><img
+                                src="images/posts08.jpg" class="img-fluid card-img-top" alt="posts"></a>
+                        <div class="card-body">
+                            <a href="#" class="text-uppercase text-primary fw-light">Places</a>
+                            <h5 class="card-title mt-2"><a href="#">Оцените красоту звездного неба высоко в горах!Здесь
+                                    создаеться впечатление что звезды гораздо ближе и светят гораздо ярче!</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                        <div class="card rounded-5 border-0">
+                            <img src="images/posts05.jpg" class="img-fluid card-img-top" alt="posts">
+                            <div class="card-body">
+                              <a href="#" class="text-uppercase text-primary fw-light">Еда и культура.</a>
+                              <h5 class="card-title mt-2"><a href="#">Находясь в тишине среди величествен-ных гор, можно в отсутствии суеты наконец найти осознание себя и путь к своей душе !</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-md-3">
+                    <div class="card rounded-5 border-0">
+                        <img src="https://avatars.mds.yandex.net/i?id=a381075ef4ae8ffeb81745165f9d78814b882785-4902400-images-thumbs&n=13"
+                            class="img-fluid card-img-top" alt="posts">
+                        <div class="card-body">
+                            <a href="#" class="text-uppercase text-primary fw-light">Рестораны и сервис</a>
+                            <h5 class="card-title mt-2"><a href="#">В округе множество уютных ресторанчиков с
+                                    калоритными блюдами национальной кухни. </a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card rounded-5 border-0">
+                        <img src="https://cdn0.bodas.com.mx/vendor/5572/3_2/960/jpg/190048554-3988859914515830-7774227567715904263-n_5_115572-162215369069001.jpeg"
+                            class="img-fluid card-img-top" alt="posts">
+                        <div class="card-body">
+                            <a href="#" class="text-uppercase text-primary fw-light">Одноместные высокогорные номера для ночлега.</a>
+                            <h5 class="card-title mt-2"><a href="#">Во время покорения величественных заснеженных вершин, есть возможность расположиться в одноместном номере, оборудованном прямо на скале , если Вас застала ночь или ненастье на пути к вершине.  </a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card rounded-5 border-0">
+                        <img src="https://i.pinimg.com/originals/fb/e2/ff/fbe2ff1f9d19248431980a45270f964a.png"
+                            class="img-fluid card-img-top" alt="posts">
+                        <div class="card-body">
+                            <a href="#" class="text-uppercase text-primary fw-light">Отели и место для аренды жилья.</a>
+                            <h5 class="card-title mt-2"><a href="#">Здесь имеется большое количество гостиниц, на самый взыскательный вкус, что бы общение с природой произошло с максимальным комфортом и по возвращении в номер была возможность расслабиться, востановить потраченные за день силы, энергию, и подготовиться к следующему дню.</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card rounded-5 border-0">
+                        <img src="images/posts03.jpg" class="img-fluid card-img-top" alt="posts">
+                        <div class="card-body">
+                            <a href="#" class="text-uppercase text-primary fw-light">Завораживающие горные пейзажи. </a>
+                            <h5 class="card-title mt-2"><a href="#">Ближе к наступлениям вечерних сумерек, на рассвете утром, и в часы перед наступлением снежных буранов спускаеться туманная дымка пелены, и от этого окружающий ланшафт приобретает таинственные очертания.     </a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <section id="recent-videos" class="padding-medium"
+        style="background-image:url(images/video-bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;">
+        <div class="container">
+            <h2 class="display-2 text-primary text-capitalize mb-5 text-center">Посмотрите мое недавнее видео о
+                путешествии</h2>
+            <div class="row flex-column">
+                <div class="col-md-12">
+                    <!-- product-large-slider -->
+                    <div class="swiper product-large-slider rounded-4">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="video-player text-center position-relative">
+                                    <img src="images/item-large1.jpg" alt="product-large"
+                                        class="img-fluid rounded-4 position-absolute top-0 start-0">
+                                    <a type="button" data-bs-toggle="modal"
+                                        data-src="https://www.youtube.com/embed/W_tIumKa8VY" data-bs-target="#myModal"
+                                        class="play-btn position-absolute top-0 bottom-0 start-0 end-0">
+                                        <svg width="70" height="70">
+                                            <use xlink:href="#play"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="video-player text-center position-relative">
+                                    <img src="images/item-large2.jpg" alt="product-large"
+                                        class="img-fluid rounded-4 position-absolute top-0 start-0">
+                                    <a type="button" data-bs-toggle="modal"
+                                        data-src="https://www.youtube.com/embed/W_tIumKa8VY" data-bs-target="#myModal"
+                                        class="play-btn position-absolute top-0 bottom-0 start-0 end-0">
+                                        <svg width="70" height="70">
+                                            <use xlink:href="#play"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="video-player text-center position-relative">
+                                    <img src="images/item-large3.jpg" alt="product-large"
+                                        class="img-fluid rounded-4 position-absolute top-0 start-0">
+                                    <a type="button" data-bs-toggle="modal"
+                                        data-src="https://www.youtube.com/embed/W_tIumKa8VY" data-bs-target="#myModal"
+                                        class="play-btn position-absolute top-0 bottom-0 start-0 end-0">
+                                        <svg width="70" height="70">
+                                            <use xlink:href="#play"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="video-player text-center position-relative">
+                                    <img src="images/item-large4.jpg" alt="product-large"
+                                        class="img-fluid rounded-4 position-absolute top-0 start-0">
+                                    <a type="button" data-bs-toggle="modal"
+                                        data-src="https://www.youtube.com/embed/W_tIumKa8VY" data-bs-target="#myModal"
+                                        class="play-btn position-absolute top-0 bottom-0 start-0 end-0">
+                                        <svg width="70" height="70">
+                                            <use xlink:href="#play"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="video-player text-center position-relative">
+                                    <img src="images/item-large5.jpg" alt="product-large"
+                                        class="img-fluid rounded-4 position-absolute top-0 start-0">
+                                    <a type="button" data-bs-toggle="modal"
+                                        data-src="https://www.youtube.com/embed/W_tIumKa8VY" data-bs-target="#myModal"
+                                        class="play-btn position-absolute top-0 bottom-0 start-0 end-0">
+                                        <svg width="70" height="70">
+                                            <use xlink:href="#play"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="video-player text-center position-relative">
+                                    <img src="images/item-large5.jpg" alt="product-large"
+                                        class="img-fluid rounded-4 position-absolute top-0 start-0">
+                                    <a type="button" data-bs-toggle="modal"
+                                        data-src="https://www.youtube.com/embed/W_tIumKa8VY" data-bs-target="#myModal"
+                                        class="play-btn position-absolute top-0 bottom-0 start-0 end-0">
+                                        <svg width="70" height="70">
+                                            <use xlink:href="#play"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="video-player text-center position-relative">
+                                    <img src="images/item-large1.jpg" alt="product-large"
+                                        class="img-fluid rounded-4 position-absolute top-0 start-0">
+                                    <a type="button" data-bs-toggle="modal"
+                                        data-src="https://www.youtube.com/embed/W_tIumKa8VY" data-bs-target="#myModal"
+                                        class="play-btn position-absolute top-0 bottom-0 start-0 end-0">
+                                        <svg width="70" height="70">
+                                            <use xlink:href="#play"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- / product-large-slider -->
+                </div>
+                <div class="col-md-12 mt-3">
+                    <!-- product-thumbnail-slider -->
+                    <div thumbsSlider="" class="swiper rounded-4 product-thumbnail-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/item-thumb1.jpg" alt="image" class="thumb-image img-fluid rounded-4">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/item-thumb2.jpg" alt="image" class="thumb-image img-fluid rounded-4">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://avatars.mds.yandex.net/i?id=3de717325cffc3fb0a7424c6ce257929e917e2fc-5597882-images-thumbs&n=13"
+                                    alt="image" class="thumb-image img-fluid rounded-4">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/item-thumb4.jpg" alt="image" class="thumb-image img-fluid rounded-4">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/item-thumb5.jpg" alt="image" class="thumb-image img-fluid rounded-4">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/item-thumb5.jpg" alt="image" class="thumb-image img-fluid rounded-4">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/item-thumb5.jpg" alt="image" class="thumb-image img-fluid rounded-4">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / product-thumbnail-slider -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="second-posts" class="padding-medium">
+        <div class="container">
+            <div class="row g-2 g-sm-5">
+                <div class="col-md-6">
+                    <h2 class="display-2 text-primary text-capitalize mb-4">Здоровье и тренировки</h2>
+                    <div class="post">
+                        <img style="width: 522px;"
+                            src="https://avatars.mds.yandex.net/i?id=be6b48cde4f65e942abaee50415515bb82ac7228-6295814-images-thumbs&n=13"
+                            alt="posts">
+                        <h4 class="card-title mt-3"><a href="#">Восхитительный лимонно-виноградный вкус, который хорошо
+                                сочетается с моим любимым ягодным блендом</a></h4>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="display-2 text-primary text-capitalize mb-4">Из последних историй</h2>
+                    <div class="post mb-3">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="images/posts10.jpg" class="img-fluid rounded-4" alt="posts">
+                            </div>
+                            <div class="col-md-9">
+                                <span href="#" class="text-uppercase text-grey">22 февраля 2021</span>
+                                <h4 class="card-title mt-1"><a href="#">Когда тьма застилает мне глаза, а небо и земля,
+                                        кажется, обитают в моей душе.</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post mb-3">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="images/posts11.jpg" class="img-fluid rounded-4" alt="posts">
+                            </div>
+                            <div class="col-md-9">
+                                <span href="#" class="text-uppercase text-grey">24 марта 2021</span>
+                                <h4 class="card-title mt-1"><a href="#">Эти чудесные весенние утра, которыми я
+                                        наслаждаюсь всем сердцем</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post mb-3">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img style="width: 120.5px; height: 120.5px;"
+                                    src="https://irecommend.ru/sites/default/files/imagecache/copyright1/user-images/1104423/ULpF92JPHdgbT8OfR64g.jpg"
+                                    class="img-fluid rounded-4" alt="posts">
+                            </div>
+                            <div class="col-md-9">
+                                <span href="#" class="text-uppercase text-grey">9 июня 2019</span>
+                                <h4 class="card-title mt-1"><a href="#">Здесь я чувствую присутствие Всевышнего, который
+                                        нас создал и незримо следит за нами .</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post mb-3">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="images/posts13.jpg" class="img-fluid rounded-4" alt="posts">
+                            </div>
+                            <div class="col-md-9">
+                                <span href="#" class="text-uppercase text-grey">5 апреля 2017</span>
+                                <h4 class="card-title mt-1"><a href="#">Восхитительный лимонно-виноградный вкус, который
+                                        хорошо сочетается с моим любимым ягодным блендом</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="instagram">
+        <h2 class="display-2 text-dark text-capitalize text-center mb-4">Подписывайтесь на меня в instagram @SALIH
+        </h2>
+        <div class="row flex-column flex-sm-row g-0">
+            <div class="col">
+                <a href="#">
+                    <img style="width: 480px; height: 320px;" src="images/insta1.jpg" alt="insta" class="img-fluid">
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <img style="width: 480px; height: 320px;"
+                        src="https://avatars.mds.yandex.net/i?id=336a0e2149bb777cbc71d7b23287130efb722806-4571961-images-thumbs&n=13"
+                        alt="insta" class="img-fluid">
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <img style="width: 480px; height: 320px;" src="images/insta3.jpg" alt="insta" class="img-fluid">
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <img style="width: 480px; height: 320px;" src="images/insta4.jpg" alt="insta" class="img-fluid">
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://www.youtube.com/watch?v=P32DqQJpUFQ">
+                    <img style="width: 480px; height: 320px;" src="images/insta5.jpg" alt="insta" class="img-fluid">
+                </a>
+            </div>
+        </div>
+        <div class="row flex-column flex-sm-row g-0">
+            <div class="col">
+                <a href="https://rutube.ru/video/6c2c99c4a185bf77b0069f6b88e80222/?r=plwd">
+                    <img style="width: 480px; height: 320px;" src="images/insta1.jpg" alt="insta" class="img-fluid">
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://rutube.ru/video/4818eaa4d8dc8ac778f0a5d9c11897fb/?r=plwd">
+                    <img style="width: 480px; height: 320px;"
+                        src="https://avatars.mds.yandex.net/i?id=336a0e2149bb777cbc71d7b23287130efb722806-4571961-images-thumbs&amp;n=13"
+                        alt="insta" class="img-fluid">
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://dzen.ru/video/watch/5f7f2c060ed9ec1e0afbc444?t=9">
+                    <img style="width: 480px; height: 320px;" src="images/insta3.jpg" alt="insta" class="img-fluid">
+                </a>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://rutube.ru/video/24e66f53bfbb58210529bbf222ec0628/?r=plwd">
+                    <img style="width: 480px; height: 320px;" src="https://s00.yaplakal.com/pics/pics_original/9/1/2/9456219.jpg" alt="insta" class="img-fluid">
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://yandex.ru/video/preview/11469659908963934995">
+                    <img style="width: 480px; height: 320px;"
+                        src="https://i.pinimg.com/736x/22/51/56/2251561ca0999a91be5df7e4e13e11b2.jpg" alt="insta"
+                        class="img-fluid">
+
+                </a>
+            </div>
+        </div>
+        <div class="row flex-column flex-sm-row g-0">
+            <div class="col">
+                <a href="#">
+                    <img style="width: 480px; height: 320px;" src="images/IMG_20191023_120437[1] (3).jpg" alt="insta"
+                        class="img-fluid">
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://yandex.ru/video/preview/18227101009920866523?from=tabbar&parent-reqid=&text=лыжник+спустился+слалом+и+обдал+снегом+лыжницу">
+                    <img style="width: 480px; height: 320px;" src="images/IMG_20200207_154231[1].jpg" alt="insta"
+                        class="img-fluid">
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://rutube.ru/video/310c6b18aa7e74ac07af10f115e8a9ef/?r=plwd">
+                    <img style="width: 480px; height: 320px;" src="images/IMG_20211229_165502[1] (1).jpg" alt="insta"
+                        class="img-fluid">
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <img style="width: 480px; height: 320px;" src="images/IMG_20230217_191018[1] (1).jpg" alt="insta"
+                        class="img-fluid">
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <img style="width: 480px; height: 320px;" src="images/IMG_20210809_163842[1] (1).jpg" alt="insta"
+                        class="img-fluid">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="text-light padding-medium"
+        style="background-image:url(images/footer-bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;">
+        <div class="container">
+
+            <div class="subscribe text-center w-50 m-auto">
+                <h2 class="display-2 text-white text-capitalize">Подпишитесь на нашу рассылку новостей</h2>
+                <p>
+                    Получайте последние новости, обновления и специальные предложения прямо на свой почтовый ящик</p>
+                <form class="mt-4">
+                    <div>
+                        <input type="email" class="form-control form-control-lg border-0 rounded-pill text-center py-3"
+                            name="email" id="email" placeholder="Your email address here">
+                        <div data-lastpass-icon-root=""
+                            style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <a type="submit" class="btn btn-primary mt-3">Subscribe</a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 my-5 py-5 ">
+
+                <div class="col-md-3 my-5 mt-md-0">
+                    <img src="images/main-logo-light.png" alt="logo" class="img-fluid">
+                    <p class="my-4">Я уже давно не чувствую себя разумным человеком. Морис - улламкорпер и Якулис. И
+                        масса людей, не входящих в ЕС, не входят в ЕС,.</p>
+                    <div class="d-flex align-items-center ">
+                        <a href="#" target="_blank"><iconify-icon class="social-icon-footer pe-4"
+                                icon="mdi:facebook"></iconify-icon></a>
+                        <a href="#" target="_blank"><iconify-icon class="social-icon-footer pe-4"
+                                icon="mdi:twitter"></iconify-icon></a>
+                        <a href="#" target="_blank"><iconify-icon class="social-icon-footer pe-4"
+                                icon="mdi:instagram"></iconify-icon></a>
+                        <a href="#" target="_blank"><iconify-icon class="social-icon-footer pe-4"
+                                icon="mdi:linkedin"></iconify-icon></a>
+                        <a href="#" target="_blank"><iconify-icon class="social-icon-footer pe-4"
+                                icon="mdi:youtube"></iconify-icon></a>
+                    </div>
+
+                </div>
+
+                <div class="col-md-2 offset-md-1">
+                    <h5 class="text-white text-capitalize fs-5 mt-3 mt-md-0 mb-3">О НАС</h5>
+                    <ul class="navbar-nav flex-column">
+                        <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">О
+                                нас.</a>
+                        </li>
+                        <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Моя
+                                история.</a>
+                        </li>
+                        <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Почему вы
+                                выбрали именно нас.</a>
+                        </li>
+                        <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Наша
+                                история.</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="text-white text-capitalize fs-5 mt-3 mt-md-0 mb-3">БЫСТРЫЕ ССЫЛКИ</h5>
+                    <ul class="navbar-nav flex-column">
+                        <li class="nav-item footer-list mb-3"><a href="#"
+                                class="nav-link text-uppercase p-0 ">Главная</a>
+                        </li>
+                        <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">О нас</a>
+                        </li>
+                        <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Блог</a>
+                        </li>
+                        <li class="nav-item footer-list mb-3"><a href="#"
+                                class="nav-link text-uppercase p-0 ">Новости</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2 ">
+                    <h5 class="text-white text-capitalize fs-5 mt-3 mt-md-0 mb-3">СВЯЗАТЬСЯ С НАМИ</h5>
+                    <ul class="navbar-nav flex-column">
+                        <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">Наше
+                                местоположение</a>
+                        </li>
+                        <li class="nav-item footer-list mb-3"><a href="#"
+                                class="nav-link text-uppercase p-0 ">КОНТАКТЫ</a>
+                        </li>
+                        <li class="nav-item footer-list mb-3"><a href="#" class="nav-link text-uppercase p-0 ">АДРЕС</a>
+                        </li>
+                        <li class="nav-item footer-list mb-3"><a href="#"
+                                class="nav-link text-uppercase p-0 ">Facebook</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2 ">
+                    <h5 class="text-white text-capitalize fs-5 mt-3 mt-md-0 mb-3">Дополнительная информация</h5>
+                    <ul class="navbar-nav flex-column">
+                        <li class="nav-item footer-list mb-3"><a href="#"
+                                class="nav-link text-uppercase p-0 ">Полиция</a>
+                        </li>
+                        <li class="nav-item footer-list mb-3"><a href="#"
+                                class="nav-link text-uppercase p-0 ">Условия</a>
+                        </li>
+                        <li class="nav-item footer-list mb-3"><a href="#"
+                                class="nav-link text-uppercase p-0 ">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="bottom-footer text-center">
+                <p>© 2025 SALIH | Template By: <a href="https://templatesjungle.com/"
+                        class="website-link text-white text-decoration-underline" target="_blank">
+                        <b>TemplatesJungle</b></a></p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Video Popup -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><svg class="bi"
+                            width="40" height="40">
+                            <use xlink:href="#close-sharp"></use>
+                        </svg></button>
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
+                            allow="autoplay"></iframe>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- script ================================================== -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+
+
+</body>
+
+</html>
